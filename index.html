@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel firm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="beginning">
+
+    <div class="headingPage">
+        <h1 class="heading">Travel with us!</h1>
+    </div>
+
+    <div class="nearTour">
+        <div class="nearTourHeading">
+            <h2 class="nearTourText">A wonderful trip to France is coming soon!</h2>
+        </div>
+
+        <div class="timeNearTour">
+            <div class="block">
+                <h4 class="days"></h4>
+                <h3 class="blockName">Days</h3>
+            </div>
+    
+            <div class="block">
+                <h4 class="hours"></h4>
+                <h3 class="blockName">Hours</h3>
+            </div>
+
+            <div class="block">
+                <h4 class="minutes"></h4>
+                <h3 class="blockName">Minutes</h3>
+            </div>
+    
+            <div class="block">
+                <h4 class="seconds"></h4>
+                <h3 class="blockName">Seconds</h3>
+            </div>  
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="container">
+
+        <div class="item france selected">
+            <h4 class="city">France</h4>
+            <p>Country of amazing beauty. It is rightfully considered the most romantic country.</p>
+        </div>
+
+        <div class="item italy">
+            <h4 class="city">Italy</h4>
+            <p>Country of art and inspiration.</p>
+        </div>
+
+        <div class="item malta">
+            <h4 class="city">Malta</h4>
+            <p>Famous for the purity of its waters. There are no cold winds, fogs, and long torrential rains.</p>
+        </div>
+
+        <div class="item spain">
+            <h4 class="city">Spain</h4>
+            <p>Country of bright sun, unique color and delicious cuisine.</p>
+        </div>
+
+        <div class="item uk">
+            <h4 class="city">United Kingdom</h4>
+            <p>Сountry with an exciting history and rich cultural traditions.</p>
+        </div>
+    </div>
+    
+    <div class="message">
+        <h3 class="heading">Send us a message</h3>
+    </div>
+
+<form action="https://formspree.io/f/xbjblwgq" method="POST">
+    
+    <input type="hidden" name="_language" value="en" /> 
+    
+    <div class="message field">
+        <label>Your email:</label>
+            <input class="text-input" type="email" name="email" placeholder="Your email..." required="">
+    </div>
+    
+    <div class="message field">
+        <label> Your message:</label>
+            <textarea class="text-input" name="message" placeholder="Your message..." required=""></textarea>
+    </div>
+
+    <div class="message ">
+        <button class="btn" type="submit">Send</button>
+    </div>
+</form>
+    
+    <script src="index.js"></script>
+</body>
+</html>

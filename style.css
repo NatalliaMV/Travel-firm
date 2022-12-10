@@ -1,0 +1,243 @@
+body {
+    background-color: #16213E;
+    padding: 0px 5px;
+}
+
+.beginning {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headingPage {
+    flex: 2;
+}
+
+.headingPage {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    color: #F7ECDE;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.nearTour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nearTourHeading {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    padding: 5px;
+}
+
+.nearTourText {
+    color:#F0E161;
+    font-size: 25px;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.timeNearTour {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 248, 249, 0.8); 
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.blockName {
+    font-size: 20px;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    margin: 0px;
+}
+
+.days, .hours, .minutes, .seconds {
+    font-size: 20px;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.container {
+    display: flex;
+}
+
+.france {
+    background-image: url(france.jpeg);
+}
+
+.italy {
+    background-image: url(italy.jpeg);
+}
+
+.malta {
+    background-image: url(malta.jpeg);
+}
+
+.spain {
+    background-image: url(spain.jpeg);
+}
+
+.uk {
+    background-image: url(uk.jpeg);
+}
+
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Caladea', serif;
+    margin: 5px;
+    flex: 1;
+    position: relative;
+}
+
+.city {
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    left: 40px;
+    font-weight: bold;
+    background-color: #F5EDDC;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.item p {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #F5EDDC;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.selected {
+    flex: 4;
+}
+
+.selected h4 {
+    font-size: 30px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.selected p {
+    font-size: 20px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    width: 500px;
+}
+
+label, .text-input {
+    flex: 1;
+}
+
+label {
+    color: #F7ECDE;
+    font-family: 'Caladea', serif;
+    font-size: 30px;
+    padding-top: 15px;
+    text-align: end;
+}
+
+.text-input {
+    opacity: .8;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Caladea', serif;
+}
+
+.btn {
+    background-color: #FFCB42;
+    margin: 20px 0px;
+    padding: 5px 40px;
+    font-family: 'Caladea', serif;
+    font-size: 30px;
+    border: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.text-input:focus {
+    border: 3px solid #FFCB42;
+}
+
+.tourBeginColor {
+    color: #13ee0d;
+}
+
+.periodColor {
+    color: #413F42;
+}
+
+@media all and (max-width:912px) {
+    .beginning {
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+@media all and (max-width:500px) {
+
+    .nearTourHeading {
+        width: 300px;
+    }
+    label {
+        font-size: 25px;
+    }
+    .field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
